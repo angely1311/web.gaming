@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubex</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1f1f1f;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000000;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #80df15;
+            padding: 10px;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        .games-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .game-item {
+            background-color: rgb(49, 49, 49);
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game-item h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #000000;
+            color: rgb(98, 211, 32);
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logotipo_NubeX-removebg-preview.png" alt="Juego 1">
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#planes">Planes</a>
+        <a href="#sobre nosotros">Sobre Nosotros</a>
+    </nav>
+
+    <section id="juegos">
+        <h2>Juegos Disponibles</h2>
+        <p>Estos son los juegos disponibles que puedes jugar ahora:</p>
+
+        <div class="games-list">
+            <div class="game-item">
+                <img src="ass2.PNG" alt="Juego 1">
+                <h3>Assasin´s Creed: Mirage</h3>
+                <p>Acción, Aventura</p>
+            </div>
+            <div class="game-item">
+                <img src="dark.PNG" alt="Juego 2">
+                <h3>Dark souls 3</h3>
+                <p>Acción, RPG</p>
+            </div>
+            <div class="game-item">
+                <img src="doom.PNG" alt="Juego 3">
+                <h3>Doom Eternal</h3>
+                <p>Acción</p>
+            </div>
+            <div class="game-item">
+                <img src="re.PNG" alt="Juego 4">
+                <h3>Resident Evil 2</h3>
+                <p>Terror, Aventura</p>
+            </div>
+            <div class="game-item">
+                <img src="red_dead.jpg" alt="Juego 1">
+                <h3>Red Dead Redemption 2</h3>
+                <p>Acción, Avenura</p>
+            </div>
+            <div class="game-item">
+                <img src="cod.jpg" alt="Juego 2">
+                <h3>Call od Duty: Black Ops 6</h3>
+                <p>Shooter</p>
+            </div>
+            <div class="game-item">
+                <img src="k.jpg" alt="Juego 3">
+                <h3>Kingdom Come Deliverance ll</h3>
+                <p>Aventura</p>
+            </div>
+            <div class="game-item">
+                <img src="g.jpg" alt="Juego 4">
+                <h3>Gears of War 2</h3>
+                <p>Acción, Shooter</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; Nubex. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

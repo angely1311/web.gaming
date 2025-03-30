@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nubex - Granja de Ordenadores de Alto Rendimiento</title>
+  <style>
+    /* Reset de márgenes y padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos generales */
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Encabezado */
+    header {
+      background: linear-gradient(135deg, #3e8e41, #2d7f29);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 5px solid #2d7f29;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    /* Sección de Introducción */
+    #intro {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: -30px;
+      border-radius: 10px;
+    }
+
+    #intro h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #intro p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Sección de Planes */
+    #plans {
+      padding: 60px 0;
+      background-color: #f8f8f8;
+    }
+
+    #plans h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    .plans-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .plan {
+      background-color: #fff;
+      padding: 30px;
+      width: 30%;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+    }
+
+    .plan h3 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #3e8e41;
+    }
+
+    .plan p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .plan ul {
+      list-style: none;
+      margin-bottom: 25px;
+      font-size: 1.1em;
+      color: #777;
+    }
+
+    .plan button {
+      padding: 12px 25px;
+      background-color: #3e8e41;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan button:hover {
+      background-color: #2d7f29;
+    }
+
+    /* Sección de Contacto */
+    #contact {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    #contact h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f8f8f8;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+      background-color: #fff;
+    }
+
+    form button {
+      padding: 12px 25px;
+      background-color: #3e8e41;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #2d7f29;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header>
+    <div class="container">
+      <h1>Nubex</h1>
+      <p>Granja de ordenadores de alto rendimiento para la virtualización de videojuegos en la nube</p>
+    </div>
+  </header>
+
+  <!-- Sección de Introducción -->
+  <section id="intro">
+    <div class="container">
+      <h2>Juega a títulos de alta gama sin necesidad de un hardware potente</h2>
+      <p>En Nubex, proporcionamos una infraestructura de servidores de alto rendimiento para que puedas jugar videojuegos exigentes desde cualquier dispositivo, sin tener que invertir en un hardware costoso. Solo necesitas una conexión a internet y ¡comienza a jugar!</p>
+    </div>
+  </section>
+
+  <!-- Sección de Planes -->
+  <section id="plans">
+    <div class="container">
+      <h2>Elige tu plan</h2>
+      <div class="plans-container">
+        <!-- Plan Básico -->
+        <div class="plan">
+          <h3>Plan Básico</h3>
+          <p>$X/mes o $Y/hora</p>
+          <ul>
+            <li>Instancias de bajo rendimiento</li>
+            <li>Juegos casuales y menos exigentes</li>
+            <li>Soporte básico</li>
+          </ul>
+          <button>Seleccionar Plan</button>
+        </div>
+
+        <!-- Plan Intermedio -->
+        <div class="plan">
+          <h3>Plan Intermedio</h3>
+          <p>$X/mes o $Y/hora</p>
+          <ul>
+            <li>Instancias de rendimiento medio</li>
+            <li>Juegos más exigentes</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <button>Seleccionar Plan</button>
+        </div>
+
+        <!-- Plan Avanzado -->
+        <div class="plan">
+          <h3>Plan Avanzado</h3>
+          <p>$X/mes o $Y/hora</p>
+          <ul>
+            <li>Instancias de alto rendimiento con GPU dedicada</li>
+            <li>Juegos AAA y profesionales</li>
+            <li>Soporte 24/7</li>
+          </ul>
+          <button>Seleccionar Plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes preguntas? ¡Estamos aquí para ayudarte! Contáctanos para más detalles sobre nuestros planes.</p>
+      <form action="contacto.html" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nubex. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

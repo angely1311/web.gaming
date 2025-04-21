@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro o Pago - Nubex</title>
+  <link rel="stylesheet" href="pago_estilos.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>¡Gracias por elegir Nubex!</h1>
+      <p>Por favor, completa tus datos para completar tu suscripción.</p>
+    </div>
+
+    <div class="form-container">
+      <form action="procesar_pago.php" method="POST">
+        <!-- Información personal -->
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="password" name="password" placeholder="Crea una contraseña" required>
+        <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+
+        <!-- Selección del plan -->
+    <div class="plan">
+          <label for="plan">Selecciona tu plan:</label>
+          <select name="plan" id="plan" required>
+            <option value="intermedio">Plan Basico</option>
+            <option value="intermedio">Plan Intermedio</option>
+            <option value="avanzado">Plan Avanzado</option>
+          </select>
+    </div>
+
+        <!-- Botón de envío -->
+        <button type="submit">Confirmar suscripción</button>
+      </form>
+
+      <div class="back-link">
+        <a href="planes_proyectointermodular_separado.html#registro">Volver a los planes</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

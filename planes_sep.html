@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nubex - Granja de Ordenadores de Alto Rendimiento</title>
+  <link rel="stylesheet" href="estilos_planes.css">
+</head>
+<body>
+  <!-- Encabezado -->
+ <header>
+   <h1>Nubex</h1>
+      <nav class="header"> 
+    
+        <ul>
+          <li> <button class="openbtn" onclick="openNav()">☰ Menú</button>  </li>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#games">Juegos</a></li>
+          <li><a href="#pricing">Planes</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#registro">Registrate AHORA</a></li>
+          
+        </ul>
+      </nav>
+  </header>
+
+  <!-- Sección de Introducción -->
+  <section id="intro">
+    <div class="container">
+      <h2>Juega a títulos de alta gama sin necesidad de un hardware potente</h2>
+      <p>En Nubex, proporcionamos una infraestructura de servidores de alto rendimiento para que puedas jugar videojuegos exigentes desde cualquier dispositivo, sin tener que invertir en un hardware costoso. Solo necesitas una conexión a internet y ¡comienza a jugar!</p>
+    </div>
+  </section>
+
+  <!-- Sección de Planes -->
+  <section id="plans">
+    <div class="container">
+      <h2>Elige tu plan</h2>
+      <div class="plans-container">
+        <!-- Plan Básico -->
+        <div class="plan">
+          <h3>Plan Básico</h3>
+          <p>€15/mes o 120/año</p>
+          <ul>
+            <li>Instancias de bajo rendimiento</li>
+            <li>Juegos casuales y menos exigentes</li>
+            <li>Soporte básico</li>
+          </ul>
+          <a href="file:///C:/Users/angel/OneDrive/Documentos/A/pago.html">
+            <button>Seleccionar Plan</button>
+          </a>
+        </div>
+  
+
+        <!-- Plan Intermedio -->
+        <div class="plan">
+          <h3>Plan Intermedio</h3>
+          <p>€30/mes o €360/año</p>
+          <ul>
+            <li>Instancias de rendimiento medio</li>
+            <li>Juegos más exigentes</li>
+            <li>Soporte prioritario</li>
+          </ul>
+          <a href="file:///C:/Users/angel/OneDrive/Documentos/A/pago.html">
+            <button>Seleccionar Plan</button>
+          </a>
+        </div>
+
+        <!-- Plan Avanzado -->
+        <div class="plan">
+          <h3>Plan Avanzado</h3>
+          <p>€60/mes o €720/año</p>
+          <ul>
+            <li>Instancias de alto rendimiento con GPU dedicada</li>
+            <li>Juegos AAA y profesionales</li>
+            <li>Soporte 24/7</li>
+          </ul>
+          <a href="file:///C:/Users/angel/OneDrive/Documentos/A/pago.html">
+            <button>Seleccionar Plan</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de contacto -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contáctanos</h2>
+      <div class="pregunta">¿Tienes preguntas? ¡Estamos aquí para ayudarte! Contáctanos para más detalles sobre nuestros planes.</div>
+      <form action="contacto.html" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <textarea id="message" name="message" rows="4" placeholder="Tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Nubex. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

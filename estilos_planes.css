@@ -1,0 +1,206 @@
+/* márgenes y padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Encabezado */
+    header {
+      background: #1e1e1e;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #76c7c0;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .header a:hover{
+      background-color: #1f1f1f;
+      /*background: #575757*/
+      z-index: auto;
+    }
+
+    /* Introducción */
+    #intro {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: -30px;
+      border-radius: 10px;
+    }
+
+    #intro h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    #intro p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Sección de Planes */
+    #plans {
+      padding: 60px 0;
+      background-color: #1f1f1f;
+    }
+
+    #plans h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+      color: #fffffff6;
+    }
+
+    .plans-container {
+      display: flex;
+      justify-content: space-around;
+      gap: 30px;
+    }
+
+    .plan {
+      background-color: #fff;
+      padding: 30px;
+      width: 30%;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+    }
+
+    .plan h3 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #43aab8;
+    }
+
+    .plan p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .plan ul {
+      list-style: none;
+      margin-bottom: 25px;
+      font-size: 1.1em;
+      color: #777;
+    }
+
+    .plan button {
+      padding: 12px 25px;
+      background-color: #43aab8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .plan button:hover {
+      background-color: #43aab8;
+    }
+
+    /* Sección de Contacto */
+    #contact {
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    #contact h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .pregunta {
+      padding-bottom: 30px
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #f8f8f8;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+      background-color: #fff;
+    }
+
+    form button {
+      padding: 12px 25px;
+      background-color: #43aab8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #43aab8;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
